@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:background="#F3A4A3"
         android:padding="16dp"
-        android:layout_alignParentTop="true"> <!-- Fill the top space -->
+        android:layout_alignParentTop="true"> <!-- Fill the top space. -->
 
         <!-- Back button on the left center of the header -->
         <ImageButton
