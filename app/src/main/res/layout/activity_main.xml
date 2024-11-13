@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"> <!-- Remove padding to fill space -->
+
+    <!-- Header Layout -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3A4A3"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"> <!-- Fill the top space -->
+
+        <!-- Back button on the left center of the header -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_revert"
+            android:contentDescription="Back button" />
+
+        <!-- Header Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SOS Alert System"
+            android:textSize="24sp"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <!-- TextView with the instruction -->
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="120dp"
+        android:gravity="center"
+        android:text="Pressing the SOS button will alert the nearest hospital and police station to your location."
+        android:textSize="24sp"
+        android:textColor="#F3A4A3"
+        android:textStyle="italic" />
+
+    <!-- Square-shaped SOS Button -->
+    <Button
+        android:id="@+id/sosButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/instructionText"
+        android:text="SOS"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_dark" />
+
+</RelativeLayout>
